@@ -1,0 +1,15 @@
+<div *ngFor="let post of allPosts" class="container-fluid">
+    <div class="container m-3">
+        <p class="mt-2 ms-2 float-start">
+            <strong>
+                <a class="post-name">
+                    {{ post.userId ? getUserName(post.userId).name : post.userId }}
+                </a>: 
+            </strong>
+        </p>
+        <p class="mt-2 ms-2 float-start">{{ post.postTitle }}</p>
+    </div>
+    <div class="container m-3">
+        <p class="mt-2 ms-2 float-start">{{ post.postText }}</p>
+    </div>
+</div>

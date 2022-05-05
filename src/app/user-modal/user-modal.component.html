@@ -1,0 +1,21 @@
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display': displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h5 class="modal-title" id="userDataLabel">User {{ userData.name }}</h5>
+          <button type="button" class="close" aria-label="Close" (click)="closePopup()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <button type="text" disabled>{{ userData.id }}</button>
+          <button type="text" disabled>{{ userData.name }}</button>
+          <button type="text" disabled>{{ userData.email }}</button>
+          <button type="text" disabled>{{ userData.country }}</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="closePopup()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

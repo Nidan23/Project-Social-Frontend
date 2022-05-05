@@ -1,0 +1,9 @@
+.post-name {
+    color: darkblue;
+}
+.post-name:link, .post-name:visited, .post-name:active{
+    text-decoration: none;
+}
+.post-name:hover{
+    cursor: pointer;
+}
